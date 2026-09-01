@@ -1,0 +1,149 @@
+/* SCORR Maintenance Check — admin screen */
+
+.scorr-mc-wrap {
+	max-width: 1160px;
+}
+
+.scorr-mc-header {
+	display: flex;
+	align-items: center;
+	gap: 16px;
+	margin: 16px 0 8px;
+}
+
+.scorr-mc-logo {
+	height: 48px;
+	width: auto;
+}
+
+.scorr-mc-header h1 {
+	padding: 0;
+	margin: 0;
+	font-size: 26px;
+}
+
+.scorr-mc-grid {
+	display: grid;
+	grid-template-columns: repeat( 2, minmax( 0, 1fr ) );
+	gap: 16px;
+	margin-top: 16px;
+}
+
+.scorr-mc-card {
+	background: #fff;
+	border: 1px solid #dcdcde;
+	border-top: 3px solid #a71930;
+	border-radius: 6px;
+	padding: 18px 22px 20px;
+	box-shadow: 0 1px 2px rgba( 0, 0, 0, 0.04 );
+	min-width: 0;
+}
+
+.scorr-mc-card-wide {
+	grid-column: 1 / -1;
+}
+
+.scorr-mc-card h2 {
+	margin: 0 0 12px;
+	font-size: 16px;
+	display: flex;
+	align-items: center;
+	gap: 8px;
+}
+
+.scorr-mc-version {
+	font-size: 34px;
+	font-weight: 700;
+	line-height: 1;
+	margin: 4px 0 10px;
+	color: #1d2327;
+}
+
+.scorr-mc-badge {
+	display: inline-block;
+	padding: 2px 9px;
+	border-radius: 10px;
+	font-size: 11px;
+	font-weight: 600;
+	margin-left: 6px;
+	vertical-align: 1px;
+}
+
+.scorr-mc-badge.ok {
+	background: #e5f5ea;
+	color: #116329;
+}
+
+.scorr-mc-badge.warn {
+	background: #fbeef0;
+	color: #a71930;
+}
+
+.scorr-mc-badge.core {
+	background: #e0f5f7;
+	color: #006d7a;
+}
+
+.scorr-mc-count {
+	display: inline-flex;
+	align-items: center;
+	justify-content: center;
+	min-width: 22px;
+	height: 22px;
+	padding: 0 6px;
+	border-radius: 11px;
+	font-size: 12px;
+	font-weight: 700;
+}
+
+.scorr-mc-count.ok {
+	background: #e5f5ea;
+	color: #116329;
+}
+
+.scorr-mc-count.warn {
+	background: #a71930;
+	color: #fff;
+}
+
+.scorr-mc-allgood {
+	color: #116329;
+	font-weight: 600;
+}
+
+.scorr-mc-progress {
+	margin: 10px 0 4px;
+	background: #f0f0f1;
+	border-radius: 4px;
+}
+
+.scorr-mc-progress-bar {
+	height: 8px;
+	width: 0;
+	background: #0097a9;
+	border-radius: 4px;
+	transition: width 0.25s ease;
+}
+
+.scorr-mc-progress-text {
+	margin: 6px 0 0;
+	color: #646970;
+	font-size: 12px;
+}
+
+.scorr-mc-generate-btn {
+	background: #a71930;
+	border-color: #a71930;
+}
+
+.scorr-mc-generate-btn:hover,
+.scorr-mc-generate-btn:focus {
+	background: #82142a;
+	border-color: #82142a;
+}
+
+@media ( max-width: 960px ) {
+	.scorr-mc-grid {
+		grid-template-columns: 1fr;
+	}
+}
