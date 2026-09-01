@@ -2,7 +2,7 @@
 /**
  * Plugin Name:       SCORR Maintenance Check
  * Description:       Website maintenance reporting for SCORR Marketing client sites — tracks WordPress core and plugin updates, scans for missing meta descriptions, and generates a branded PDF maintenance report.
- * Version:           1.0.0
+ * Version:           1.1.0
  * Author:            SCORR Marketing
  * Author URI:        https://www.scorrmarketing.com
  * License:           GPL-2.0-or-later
@@ -16,7 +16,7 @@ if ( ! defined( 'ABSPATH' ) ) {
 	exit;
 }
 
-define( 'SCORR_MC_VERSION', '1.0.0' );
+define( 'SCORR_MC_VERSION', '1.1.0' );
 define( 'SCORR_MC_FILE', __FILE__ );
 define( 'SCORR_MC_DIR', plugin_dir_path( __FILE__ ) );
 define( 'SCORR_MC_URL', plugin_dir_url( __FILE__ ) );
